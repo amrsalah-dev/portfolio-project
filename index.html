@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amr Salah</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,700&family=Roboto:wght@100;300;400;500;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <!-- Go To Btn  -->
+    <p id="toTop">UP</p>
+    <!-- Start Custom Colors  -->
+    <div id="cir" class="circles d-flex flex-column gap-3 position-fixed">
+      <p class="colors" id="purple" data-color="#8011f5"></p>
+      <p class="colors" id="rose" data-color="#c44569"></p>
+      <p class="colors" id="darkBlue" data-color="#0a3d62"></p>
+      <p class="colors" id="lightGreen" data-color="#10ac84"></p>
+      <p class="colors" id="dark" data-color="#000"></p>
+    </div>
+    <!-- End Custom Colors  -->
+    <!-- Start nav  -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h1 class="logo">amr<span>salah</span></h1>
+        </a>
+        <button
+          id="btn"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link position-relative p-lg-3 p-2"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative p-lg-3 p-2" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative p-lg-3 p-2" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link position-relative p-lg-3 p-2"
+                href="#testimonials"
+                >Testimonials</a
+              >
+            </li>
+          </ul>
+          <div class="search ps-3 pe-3 d-none d-lg-block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End nav  -->
+    <!-- Start Home  -->
+    <div class="home ">
+      <div class="container-fluid  p-0 ">
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./imgs/photo-1531297484001-80022131f5a1.avif"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Hello, I'm <span class="nm">Amr Salah</span></h1>
+                <p class="h5 text-secondary">Full Stack Developer</p>
+              </div>
+              </div>
+            <div class="carousel-item">
+              <img
+                src="./imgs/photo-1531297484001-80022131f5a1.avif"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Hello, I'm <span class="nm">Amr Salah</span></h1>
+                <p class="h5 text-secondary">Full Stack Developer</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> 
+      </div>
+    </div>
+    <!-- End Home  -->
+    <!-- Start about  -->
+    <div class="about py-5 position-relative" id="about">
+      <h2 class="main-title py-5">about</h2>
+      <div class="container p-md-4">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-6 p-md-4 pic">
+              <img
+                src="./imgs/cat-01.jpg"
+                class="img-fluid rounded border border-white"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6 align-self-center">
+              <div class="card-body p-md-4 text-center text-md-start">
+                <h3 class="card-title">Amr Salah</h3>
+                <h6>Full Stack Developer</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Accusamus nihil laudantium itaque molestias dignissimos
+                  incidunt perferendis esse ratione. Blanditiis, doloremque
+                  distinctio. Omnis assumenda repudiandae voluptas quod commodi
+                  alias, error pariatur. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Beatae molestias tempora aut atque nostrum
+                  deserunt consectetur officia blanditiis dolorem provident,
+                  quod perspiciatis voluptate dignissimos. Debitis repellat
+                  maiores fugit quo ipsam.
+                </p>
+                <a href="./cv.pdf" download="CV" class="btn me-4"
+                  >Download CV</a
+                >
+                <a href="#" class="btn hm">Hire me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End about  -->
+    <!-- Start Projects  -->
+    <div class="projects position-relative py-5" id="projects">
+      <h2 class="main-title py-5">projects</h2>
+      <div
+        class="container d-flex gap-5 justify-content-between align-items-center flex-wrap"
+      >
+        <div class="card cd position-relative">
+          <div class="card-img">
+            <img
+              src="./old projects/Screenshot 2022-09-20 025534.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">
+              <span>&lt; </span> Portfolio <span>/&gt;</span>
+            </h5>
+            <div class="btns d-flex justify-content-center gap-3 mt-4">
+              <button type="button" class="btn btn-lg py-2 px-5">Demo</button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg py-2 px-5"
+              >
+                Code
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card cd position-relative">
+          <div class="card-img">
+            <img
+              src="./old projects/Screenshot 2022-09-20 030346.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">
+              <span>&lt; </span> Space <span>/&gt;</span>
+            </h5>
+            <div class="btns d-flex justify-content-center gap-3 mt-4">
+              <button type="button" class="btn btn-lg py-2 px-5">Demo</button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg py-2 px-5"
+              >
+                Code
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card cd position-relative">
+          <div class="card-img">
+            <img
+              src="./old projects/Screenshot 2022-09-20 030803.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">
+              <span>&lt; </span>Frontend Bootcamp <span>/&gt;</span>
+            </h5>
+            <div class="btns d-flex justify-content-center gap-3 mt-4">
+              <button type="button" class="btn btn-lg py-2 px-5">Demo</button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg py-2 px-5"
+              >
+                Code
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card cd position-relative">
+          <div class="card-img">
+            <img
+              src="./old projects/Screenshot 2022-09-22 005203.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">
+              <span>&lt; </span>Manage <span>/&gt;</span>
+            </h5>
+            <div class="btns d-flex justify-content-center gap-3 mt-4">
+              <button type="button" class="btn btn-lg py-2 px-5">Demo</button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg py-2 px-5"
+              >
+                Code
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card cd position-relative">
+          <div class="card-img">
+            <img
+              src="./old projects/Screenshot 2022-09-21 231124.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">
+              <span>&lt; </span> Easybank <span>/&gt;</span>
+            </h5>
+            <div class="btns d-flex justify-content-center gap-3 mt-4">
+              <button type="button" class="btn btn-lg py-2 px-5">Demo</button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg py-2 px-5"
+              >
+                Code
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card cd position-relative">
+          <div class="card-img">
+            <img
+              src="./old projects/Screenshot 2022-09-21 230510.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title mx-auto w-fit-content">
+              <span>&lt; </span> Portfolio <span>/&gt;</span>
+            </h5>
+            <div class="btns d-flex justify-content-center gap-3 mt-4">
+              <button type="button" class="btn btn-lg py-2 px-5">Demo</button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg py-2 px-5"
+              >
+                Code
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Projects -->
+    <!-- Start Testimonials -->
+    <div class="testimonials py-5 position-relative" id="testimonials">
+      <h2 class="main-title py-5">Testimonials</h2>
+      <div class="container d-grid gap-5">
+        <div
+          class="card box text-light text-center text-md-start pt-5 pt-md-3 p-4 position-relative rounded-3"
+        >
+          <img
+            src="imgs/avatar-01.png"
+            alt=""
+            class="card-img position-absolute rounded-circle"
+          />
+          <h3 class="mt-4 text-light card-title">Mohamed Farag</h3>
+          <span class="title d-block mb-2">Full Stack Developer</span>
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et
+            reiciendis voluptatum, amet est natus quaerat ducimus
+          </p>
+        </div>
+        <div
+          class="card box text-light text-center text-md-start pt-5 pt-md-3 p-4 position-relative rounded-3"
+        >
+          <img
+            src="imgs/avatar-02.png"
+            alt=""
+            class="card-img position-absolute rounded-circle"
+          />
+          <h3 class="mt-4">Mohamed Ibrahim</h3>
+          <span class="title d-block mb-2">Full Stack Developer</span>
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et
+            reiciendis voluptatum, amet est natus quaerat ducimus
+          </p>
+        </div>
+        <div
+          class="card box text-light text-center text-md-start pt-5 pt-md-3 p-4 position-relative rounded-3"
+        >
+          <img
+            src="imgs/avatar-03.png"
+            alt=""
+            class="card-img position-absolute rounded-circle"
+          />
+          <h3 class="mt-4">Shady Nabil</h3>
+          <span class="title d-block mb-2">Full Stack Developer</span>
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et
+            reiciendis voluptatum, amet est natus quaerat ducimus
+          </p>
+        </div>
+        <div
+          class="card box text-light text-center text-md-start pt-5 pt-md-3 p-4 position-relative rounded-3"
+        >
+          <img
+            src="imgs/avatar-04.png"
+            alt=""
+            class="card-img position-absolute rounded-circle"
+          />
+          <h3 class="mt-4">Amr Hendawy</h3>
+          <span class="title d-block mb-2">Full Stack Developer</span>
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et
+            reiciendis voluptatum, amet est natus quaerat ducimus
+          </p>
+        </div>
+        <div
+          class="card box text-light text-center text-md-start pt-5 pt-md-3 p-4 position-relative rounded-3"
+        >
+          <img
+            src="imgs/avatar-05.png"
+            alt=""
+            class="card-img position-absolute rounded-circle"
+          />
+          <h3 class="mt-4">Sherief Ashraf</h3>
+          <span class="title d-block mb-2">Full Stack Developer</span>
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et
+            reiciendis voluptatum, amet est natus quaerat ducimus
+          </p>
+        </div>
+        <div
+          class="card box text-light text-center text-md-start pt-5 pt-md-3 p-4 position-relative rounded-3"
+        >
+          <img
+            src="imgs/avatar-06.png"
+            alt=""
+            class="card-img position-absolute rounded-circle"
+          />
+          <h3 class="mt-4">Osama Mohamed</h3>
+          <span class="title d-block mb-2">Full Stack Developer</span>
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et
+            reiciendis voluptatum, amet est natus quaerat ducimus
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials -->
+    <!-- Start Footer -->
+    <footer class="pt-5 pb-2 text-white-50 text-center text-md-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="info mb-5">
+              <h1 class="logo mb-3">amr<span>salah</span></h1>
+              <p class="mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus nihil laudantium itaque molestias dignissimos incidunt
+                perferendis esse ratione. Blanditiis, doloremque distinctio.
+                Omnis assumenda repudiandae voluptas quod commodi alias, error
+                pariatur.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Testimonials</li>
+                <li>Support</li>
+                <li>Terms and Condition</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">About Us</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Sign In</li>
+                <li>Register</li>
+                <li>About Us</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="contact">
+              <h5 class="text-light">Contact Us</h5>
+              <p class="lh-lg mt-3 mb-3">
+                Get in touch with us via mail phone.We are waiting for your call
+                or message
+              </p>
+              <ul
+                class="contact-2 d-flex justify-content-center justify-content-md-start gap-3"
+              >
+                <li><a href="tel:+20-111-1111-111">Make a Call</a></li>
+                <li><a href="mailto:someone@example.com">Send Email</a></li>
+              </ul>
+              <ul
+                class="d-flex justify-content-center justify-content-md-start mt-5 gap-2 list-unstyled"
+              >
+                <li>
+                  <a class="d-block text-light" href="#"
+                    ><i
+                      class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#"
+                    ><i
+                      class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#"
+                    ><i
+                      class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#"
+                    ><i
+                      class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright d-flex justify-content-center gap-1">
+          Created By <span> Amr Salah </span>
+          <div>&copy; 2022 - <span>For ITI</span></div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
